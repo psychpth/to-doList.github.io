@@ -1,0 +1,140 @@
+/* Import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+ /* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
+    background-image: url(../img/img.jpg);
+}
+
+/* Time and Date */
+.container {
+    display: block;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    visibility: visible;
+    align-self: last baseline;
+}
+
+/* Hide Time and Date */
+.container.animation {
+    animation: slide-up .8s;   
+}
+
+/* Time and Date Animation */
+@keyframes slide-up {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-500%);
+    }
+}
+
+.container.hide {
+    display: none;
+}
+
+.time {
+    font-size: 5rem;
+}
+
+.date {
+    font-size: 2rem;
+}
+
+/* Pop-up name account */
+.pop-up {
+    display: none;
+}
+
+/* Pop-up show */
+.pop-up.show {
+    width: 100%;
+    display: flex;
+    animation: show-pop 2s;
+    background: transparent;
+    backdrop-filter: blur(15px);
+}
+
+/* Pop-up Animation */
+@keyframes show-pop {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Other user account */
+.user-account {
+    display: flex;
+    padding: 10px;
+    color: white;
+    align-items: center;
+    margin-left: 25px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    padding-right: 50px;
+    align-self: last baseline;
+    background-color: rgba(20, 100, 150, 1);
+}
+
+.user-account img {
+    width: 40px;
+    margin-left: 5px;
+}
+
+.user-account label {
+    margin-left: 20px;
+}
+
+/* What's your name input */
+.input-name {
+    margin-left: -10%;
+    margin-top: -3%;
+    text-align: center;
+    align-self: center;
+}
+
+.input-name img {
+    width: 15%;
+    height: 20%;
+}
+
+.input-name h1 {
+    color: white;
+    margin-top: 20px;
+}
+
+.input-name input {
+    width: 300px;
+    padding: 15px;
+    color: black;
+    border: gray;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    background: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.input-name input::placeholder {
+    color: gray;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}

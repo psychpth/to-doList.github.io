@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Icon -->
+        <link rel="icon" type="image/x-icon" href="img/wlogo.png">
+        <!-- Style -->
+        <link rel="stylesheet" href="style/index.css">
+        <!-- Icons for To-do List Application -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <title>Windows 10</title>
+    </head>
+    <body>
+        <!-- Loading index page-->
+        <div class="black-screen">
+            <label class="greet-name">Hello, "Name"</label>
+        </div>
+        <!-- Main -->
+        <div class="container">
+            <!-- To-do List Icon -->
+            <div class="application">
+                <img src="img/sticky-note.png" alt="todo-list.icon">
+                <label class="To-do List">Sticky Notes</label>
+            </div>
+            <!-- To-do List Interface -->
+            <div class="gui-app">
+                <!-- Title Bar -->
+                <div class="title-bar">
+                    <label class="tb-label">Sticky Notes</label>
+                    <img src="img/close-window.png" alt="exit.icon" class="exit-application">
+                </div>
+                <!-- Input for adding task -->
+                <div class="task-input">
+                    <img src="img/bars-icon.svg">
+                    <input type="text" placeholder="Add a new task">
+                </div>
+                <div class="controls">
+                    <div class="filters">
+                        <span id="all" class="active">All</span>
+                        <span id="pending">Pending</span>
+                        <span id="completed">Completed</span>
+                    </div>
+                    <button class="clear-btn">Clear All</button>
+                </div>
+                <!-- Unorder List -->
+                <ul class="task-box">
+                    <!-- This is where the task list will push thru -->
+                </ul>
+            </div>
+            <!-- Taskbar -->
+            <div class="taskbar">
+                <img src="img/shutdown.png" alt="shutdown" class="shutdown">
+                <img src="img/sticky-note.png" alt="todo-list.icon" class="todo-taskbar">
+                <time class="time">9:36 AM</time>
+            </div>
+        </div>
+        <!-- Shutdown index page-->
+        <div class="shutdown-bscreen">
+            <label class="shutdown-name">
+                Shutting down . . . 
+            </label>
+        </div>
+        <!-- Functions -->
+        <script src="function/index.js"></script>
+    </body>
+</html>
